@@ -23,9 +23,9 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Food-ordering"
-              description="Food Ordering Webapp to order food and add to cart different food items, build with next.js, Material UI and firebase."
+              description="Food Ordering Webapp implemented with user-friendly interfaces for browsing menus, placing orders, and tracking order status in real-time and add to cart different food items, build with next.js, Material UI and firebase."
               ghLink="https://github.com/vishShivansh/Food-Ordering-Website"
-              demoLink="https://chatify-49.web.app/"
+              demoLink="https://food-ordering-website-one-omega.vercel.app/"
             />
           </Col>
 
@@ -45,9 +45,9 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="PortFolio"
-              description="My personal portfolio page build with react.js, Bootstrap Css which includes about myself, my projects, my resume and more."
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
+              description="My personal portfolio page build with react.js, Bootstrap Css which includes that effectively highlights personal projects, technical skills, and professional qualifications.Organized content into a clean, multi-page layout for easy navigation."
+              ghLink="hhttps://github.com/vishShivansh/my-portfolio"
+              demoLink="https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app/project"
             />
           </Col>
         </Row>
