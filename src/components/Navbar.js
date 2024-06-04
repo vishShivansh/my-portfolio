@@ -11,7 +11,7 @@ import {
 } from "react-icons/ai";
 import { CgGitFork } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/favicon-32x32.png";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -93,7 +93,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/vishShivansh/my-portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >
