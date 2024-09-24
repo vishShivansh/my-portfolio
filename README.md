@@ -3,16 +3,15 @@
   <a href="[https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app/)" target="_blank">Shivansh Gupta</a>
 </h2>
 
-
 <br/>
 
 <center>
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
+<!-- [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
 ![GitHub Repo stars](https://img.shields.io/github/stars/vishShivansh/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/vishShivansh/Portfolio?color=red&logo=github&style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/vishShivansh/Portfolio?color=red&logo=github&style=for-the-badge) -->
 
 </center>
 
@@ -66,4 +65,3 @@ The page will reload if you make edits.
 
 Open the project folder and Navigate to `/src/components/`. <br/>
 You will find all the components used and you can edit your information accordingly.
-
