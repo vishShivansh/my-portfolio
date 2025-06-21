@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
@@ -13,10 +12,16 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              {/* <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
+                </span>
+              </h1> */}
+              <h1 style={{ paddingBottom: 15 }} className="heading">
+                Namaste!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  🙏
                 </span>
               </h1>
 
@@ -24,10 +29,12 @@ function Home() {
                 I'M
                 <strong className="main-name"> SHIVANSH GUPTA</strong>
               </h1>
-
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+              {/* <h5 style={{ paddingTop: 50, textAlign: "left" }}>
+                Let’s craft something beautiful and scalable together.
+              </h5> */}
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>

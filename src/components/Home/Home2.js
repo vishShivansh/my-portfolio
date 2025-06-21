@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -14,7 +13,7 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
+            {/* <p className="home-about-body">
               I fell in love with programming and with this art i can turn ideas
               into digital reality.
               <br />
@@ -44,7 +43,40 @@ function Home2() {
               <i>
                 <b className="purple"> React.js and Next.js</b>
               </i>
+            </p> */}
+            {/* <p className="home-about-body">
+              I’m a passionate <b className="purple">Full Stack Developer</b> from India who turns coffee ☕ into beautiful UIs and scalable backends.
+              <br />
+              <br />
+              Fluent in the classics like <b className="purple">C++, JavaScript & TypeScript</b>, I specialize in building:
+              <ul>
+                <li><b className="purple">Interactive UI experiences</b> with React, Angular</li>
+                <li><b className="purple">Backend APIs</b> using Node.js + Express</li>
+                <li><b className="purple">Realtime apps</b> with Firebase and MongoDB</li>
+              </ul>
+              <br />
+              I believe in <b className="purple">clean code</b>, <b className="purple">product-focused development</b> and pushing pixels with precision.
+              <br />
+              <br />
+              When I’m not coding, I’m probably editing videos 🎬, exploring UI trends on Figma, or solving DSA puzzles 🧠 on LeetCode.
+            </p> */}
+            <p className="home-about-body">
+              I’m a <b className="purple">Full Stack Web Developer</b> who turns ideas into fast, functional, and beautiful digital experiences.
+              <br />
+              <br />
+              My tech toolkit includes <b className="purple">React, Angular, Node.js</b>, and databases like <b className="purple">MongoDB</b> and <b className="purple">Firebase</b>. I code with purpose, always balancing user needs with clean architecture and maintainable code.
+              <br />
+              <br />
+              Fluent in <b className="purple">C++, JavaScript, and TypeScript</b>, I love solving problems that make lives easier, products smarter, and teams happier.
+              <br />
+              <br />
+              Outside of code, I’m a curious soul. I love exploring tech trends, tinkering with UI/UX designs on <b className="purple">Figma</b>, and keeping my debugging skills sharp with <b className="purple">DSA challenges</b>.
+              <br />
+              <br />
+              And when the screen turns off, I step into the wild — <b className="purple">capturing nature through my lens</b>, soaking in sunsets, and recharging in the silence of the outdoors. It's how I balance logic with life.
             </p>
+
+
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -54,10 +86,16 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>Let’s Connect!</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Got a project, idea, or just wanna chat about dev life?
+              <span className="purple"> Hit me up!</span>
             </p>
+
+            <h4>FIND ME ON</h4>
+            {/* <p>
+              Feel free to <span className="purple">connect </span>with me
+            </p> */}
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
