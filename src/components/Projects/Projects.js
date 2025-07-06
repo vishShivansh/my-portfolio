@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import realEstate from "../../Assets/Projects/Real-Estate.png";
-import chatify from "../../Assets/Projects/chatify.png";
 import editor from "../../Assets/Projects/codeEditor.png";
+import foodOrdering from "../../Assets/Projects/food-ordering.png";
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 
@@ -19,7 +19,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={foodOrdering}
               isBlog={false}
               title="Food-ordering"
               description="Food Ordering Webapp implemented with user-friendly interfaces for browsing menus, placing orders, and tracking order status in real-time and add to cart different food items, build with next.js, Material UI and firebase."
