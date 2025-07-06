@@ -10,7 +10,6 @@ function Type() {
           "Firebase + MongoDB Specialist",
           "Pixel-Perfect UI Crafter",
           "API Magician ⚙️",
-          "Open Source Contributor",
           "Product-Driven Developer",
           "Eager Learner & Debugger 🐞"
         ],

@@ -1,6 +1,5 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import realEstate from "../../Assets/Projects/Real-Estate.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import Particle from "../Particle";
@@ -31,12 +30,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={realEstate}
               isBlog={false}
               title="Real-Estate"
               description="Crafted with the dynamic MERN stack and Firebase integration, our real estate platform offers seamless property exploration. Discover listings effortlessly, with real-time communication, scalable infrastructure, and personalized recommendations, finding your dream home has never been easier."
               ghLink="https://github.com/vishShivansh/Mern-real-estate"
-              demoLink="https://blogs.soumya-jit.tech/"
+              demoLink="https://mern-real-estate-gamma.vercel.app/"
             />
           </Col>
 
