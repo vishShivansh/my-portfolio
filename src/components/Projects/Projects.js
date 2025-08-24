@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import realEstate from "../../Assets/Projects/Real-Estate.png";
 import animatedLoginPage from "../../Assets/Projects/animatedLoginPage.png";
 import foodOrdering from "../../Assets/Projects/food-ordering.png";
+import groceryStore from "../../Assets/Projects/groceryStore.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import swarAI from "../../Assets/Projects/swarAI.png";
 import Particle from "../Particle";
@@ -53,17 +54,6 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={portfolio}
-              isBlog={false}
-              title="PortFolio"
-              description="A modern multi-page portfolio website built with React-Bootstrap and custom CSS, featuring easy-to-edit color themes and a fully responsive design for seamless viewing on all devices."
-              ghLink="https://github.com/vishShivansh/my-portfolio"
-              demoLink="https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app/project"
-              techStack={["React", "Bootstrap", "Javascript", "HTML", "CSS", "React Icons", "React GitHub Calendar", "React PDF", "Typewriter Effect", "Axios", "Vercel Deployment"]}
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={animatedLoginPage}
               isBlog={false}
               title="Animated Login Page"
@@ -71,6 +61,28 @@ function Projects() {
               ghLink="https://github.com/vishShivansh/Animated-Login-page"
               demoLink="https://animated-login-page-beta.vercel.app"
               techStack={["HTML", "Custom-CSS", "VanillaJS","Vercel Deployment"]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={groceryStore}
+              isBlog={false}
+              title="Grocery Store"
+              description="A modern grocery store website that lets users browse products, add items to cart, read reviews, explore categories, and experience a fully responsive UI."
+              ghLink="https://github.com/vishShivansh/GroceryStore"
+              demoLink="https://grocery-store-ecru.vercel.app/"
+              techStack={["HTML", "Custom-CSS", "JavaScript", "Swiper-JS", "Vercel Deployment"]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={portfolio}
+              isBlog={false}
+              title="PortFolio"
+              description="A modern multi-page portfolio website built with React-Bootstrap and custom CSS, featuring easy-to-edit color themes and a fully responsive design for seamless viewing on all devices."
+              ghLink="https://github.com/vishShivansh/my-portfolio"
+              demoLink="https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app/project"
+              techStack={["React", "Bootstrap", "Javascript", "HTML", "CSS", "React Icons", "React GitHub Calendar", "React PDF", "Typewriter Effect", "Axios", "Vercel Deployment"]}
             />
           </Col>
         </Row>
