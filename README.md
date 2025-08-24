@@ -10,9 +10,9 @@
 
 <h3 align="center">
     🔹
-    <a href="https://github.com/vishShivansh/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
+    <a href="https://github.com/vishShivansh/my-portfolio/issues">Report Bug</a> &nbsp; &nbsp;
     🔹
-    <a href="https://github.com/vishShivansh/Portfolio/issues">Request Feature</a>
+    <a href="https://github.com/vishShivansh/my-portfolio/issues">Request Feature</a>
 </h3>
 
 ### Connect With Me
@@ -79,4 +79,4 @@ You will find all the components used and you can edit your information accordin
 
 Give a ⭐ if you like this website!
 
-[![GitHub stars](https://img.shields.io/github/stars/vishShivansh/Portfolio?style=social)](https://github.com/vishShivansh/Portfolio/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/vishShivansh/my-portfolio?style=social)](https://github.com/vishShivansh/my-portfolio/stargazers)
