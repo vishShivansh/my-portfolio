@@ -25,6 +25,10 @@
   <a href="https://www.instagram.com/vish._shivansh" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
+  &nbsp;
+  <a href="https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-E4405F?style=for-the-badge&logo=aboutdotme&logoColor=white" alt="Portfolio" />
+  </a>
 </p>
 
 ## TL;DR
