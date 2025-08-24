@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -39,7 +38,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/shivansh_inn.unw?igsh=MWx0NmZsYnZ6NXF4bg=="
+                href="https://www.instagram.com/vish._shivansh"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"

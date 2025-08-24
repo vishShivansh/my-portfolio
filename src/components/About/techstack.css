@@ -1,0 +1,29 @@
+/* ---- Icon Styling ---- */
+.tech-icons a {
+  color: inherit;           /* original icon color rakho */
+  text-decoration: none;    /* underline hatao */
+  font-size: 4rem;          /* bada icon size */
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tech-icons a:hover {
+  color: #61dafb;           /* hover color (React wali cyan) */
+  transform: scale(1.2);    /* zoom hover par */
+}
+
+/* ---- Tooltip Styling ---- */
+.custom-tooltip {
+  color: #fff !important;              /* white text */
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 6px 10px;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+}

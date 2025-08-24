@@ -1,4 +1,4 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiBootstrap,
@@ -7,56 +7,50 @@ import {
   DiJavascript1,
   DiMongodb,
   DiNodejs,
-  DiReact
+  DiReact,
 } from "react-icons/di";
 import {
   SiExpress,
   SiNextdotjs,
   SiTailwindcss,
-  SiTypescript
+  SiTypescript,
 } from "react-icons/si";
+import "./techstack.css";
+
+const techs = [
+  { icon: <CgCPlusPlus />, name: "C++", link: "https://cplusplus.com/" },
+  { icon: <DiJavascript1 />, name: "JavaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+  { icon: <DiNodejs />, name: "Node.js", link: "https://nodejs.org/" },
+  { icon: <DiReact />, name: "React", link: "https://react.dev/" },
+  { icon: <DiMongodb />, name: "MongoDB", link: "https://www.mongodb.com/" },
+  { icon: <SiNextdotjs />, name: "Next.js", link: "https://nextjs.org/" },
+  { icon: <SiTypescript />, name: "TypeScript", link: "https://www.typescriptlang.org/" },
+  { icon: <DiHtml5 />, name: "HTML5", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+  { icon: <DiCss3 />, name: "CSS3", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+  { icon: <DiBootstrap />, name: "Bootstrap", link: "https://getbootstrap.com/" },
+  { icon: <SiTailwindcss />, name: "Tailwind CSS", link: "https://tailwindcss.com/" },
+  { icon: <SiExpress />, name: "Express.js", link: "https://expressjs.com/" },
+];
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiBootstrap />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTailwindcss />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiExpress />
-      </Col>
+    <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
+      {techs.map((tech, index) => (
+        <Col key={index} xs={2} md={1} className="tech-icons">
+          <OverlayTrigger
+            placement="top"
+            overlay={
+              <Tooltip id={`tooltip-${index}`} className="custom-tooltip">
+                {tech.name}
+              </Tooltip>
+            }
+          >
+            <a href={tech.link} target="_blank" rel="noreferrer">
+              {tech.icon}
+            </a>
+          </OverlayTrigger>
+        </Col>
+      ))}
     </Row>
   );
 }
