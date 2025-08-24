@@ -17,7 +17,7 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={foodOrdering}
               isBlog={false}
@@ -37,7 +37,7 @@ function Projects() {
               ghLink="https://github.com/vishShivansh/Mern-real-estate"
               demoLink="https://mern-real-estate-gamma.vercel.app/"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -45,7 +45,37 @@ function Projects() {
               isBlog={false}
               title="PortFolio"
               description="My personal portfolio page build with react.js, Bootstrap Css which includes that effectively highlights personal projects, technical skills, and professional qualifications.Organized content into a clean, multi-page layout for easy navigation."
-              ghLink="hhttps://github.com/vishShivansh/my-portfolio"
+              ghLink="https://github.com/vikassaroj123/travel_pujaari_web"
+              demoLink="https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app/project"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="PortFolio"
+              description="My personal portfolio page build with react.js, Bootstrap Css which includes that effectively highlights personal projects, technical skills, and professional qualifications.Organized content into a clean, multi-page layout for easy navigation."
+              ghLink="https://github.com/vishShivansh/my-portfolio"
+              demoLink="https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app/project"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="PortFolio"
+              description="My personal portfolio page build with react.js, Bootstrap Css which includes that effectively highlights personal projects, technical skills, and professional qualifications.Organized content into a clean, multi-page layout for easy navigation."
+              ghLink="https://github.com/vishShivansh/my-portfolio"
+              demoLink="https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app/project"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="PortFolio"
+              description="My personal portfolio page build with react.js, Bootstrap Css which includes that effectively highlights personal projects, technical skills, and professional qualifications.Organized content into a clean, multi-page layout for easy navigation."
+              ghLink="https://github.com/vishShivansh/my-portfolio"
               demoLink="https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app/project"
             />
           </Col>
