@@ -69,7 +69,7 @@ function Projects() {
               title="Animated Login Page"
               description="A modern, animated login page built with HTML, CSS, and Vanilla JavaScript featuring smooth transitions, interactive buttons, and responsive design."
               ghLink="https://github.com/vishShivansh/Animated-Login-page"
-              demoLink="https://animated-login-page-shivansh-guptas-projects-acc2e36d.vercel.app/"
+              demoLink="https://animated-login-page-beta.vercel.app"
               techStack={["HTML", "Custom-CSS", "VanillaJS","Vercel Deployment"]}
             />
           </Col>

@@ -74,11 +74,11 @@ You will find all the components used and you can edit your information accordin
 Give a ⭐ if you like this website!
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/your-username" target="_blank">
+  <a href="https://www.linkedin.com/in/shivansh-gupta-54ba2a226" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;
-  <a href="https://www.instagram.com/your-username" target="_blank">
+  <a href="https://www.instagram.com/vish._shivansh" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
 </p>
