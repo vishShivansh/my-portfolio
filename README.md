@@ -79,6 +79,13 @@ The page will reload if you make edits.
 Open the project folder and Navigate to `/src/components/`. <br/>
 You will find all the components used and you can edit your information accordingly.
 
+## 👨‍💻 Author  
+- Shivansh Gupta (vishShivansh)
+- [Portfolio](https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app)  
+- [GitHub](https://github.com/vishShivansh)  
+- [LinkedIn](https://www.linkedin.com/in/shivansh-gupta-54ba2a226)  
+- [Instagram](https://www.instagram.com/vish._shivansh) 
+
 ### Show your support
 
 Give a ⭐ if you like this website!
