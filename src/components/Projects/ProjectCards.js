@@ -85,7 +85,7 @@ function ProjectCards(props) {
             border: "1px dashed #be50f4",
           }}
         >
-          {showAll ? "See less ↑" : "... See more ↓"}
+          {showAll ? "See less ↑" : "See more ↓"}
         </motion.span>
       )}
     </div>

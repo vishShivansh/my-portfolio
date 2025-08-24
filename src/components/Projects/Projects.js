@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import realEstate from "../../Assets/Projects/Real-Estate.png";
+import animatedLoginPage from "../../Assets/Projects/animatedLoginPage.png";
 import foodOrdering from "../../Assets/Projects/food-ordering.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import swarAI from "../../Assets/Projects/swarAI.png";
@@ -59,6 +60,17 @@ function Projects() {
               ghLink="https://github.com/vishShivansh/my-portfolio"
               demoLink="https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app/project"
               techStack={["React", "Bootstrap", "Javascript", "HTML", "CSS", "React Icons", "React GitHub Calendar", "React PDF", "Typewriter Effect", "Axios", "Vercel Deployment"]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={animatedLoginPage}
+              isBlog={false}
+              title="Animated Login Page"
+              description="A modern, animated login page built with HTML, CSS, and Vanilla JavaScript featuring smooth transitions, interactive buttons, and responsive design."
+              ghLink="https://github.com/vishShivansh/Animated-Login-page"
+              demoLink="https://animated-login-page-reh6xmyhg-shivansh-guptas-projects-acc2e36d.vercel.app/"
+              techStack={["HTML", "Custom-CSS", "VanillaJS","Vercel Deployment"]}
             />
           </Col>
         </Row>
