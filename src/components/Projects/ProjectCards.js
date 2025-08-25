@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { BsGithub } from "react-icons/bs";
@@ -20,8 +20,43 @@ function ProjectCards(props) {
     ? props.techStack
     : props.techStack?.slice(0, previewLimit);
 
+  const [latestCommit, setLatestCommit] = useState(null);
+
+  useEffect(() => {
+    if (props.ghLink) {
+      const repoPath = props.ghLink.replace("https://github.com/", "");
+      fetch(`https://api.github.com/repos/${repoPath}/commits`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data && data[0]) {
+            const date = new Date(data[0].commit.author.date);
+            setLatestCommit(date.toLocaleDateString());
+          }
+        })
+        .catch((err) => console.log(err));
+    }
+  }, [props.ghLink]);
+
   return (
-    <Card className="project-card-view h-100 d-flex flex-column">
+    <Card className="project-card-view h-100 d-flex flex-column position-relative">
+      {props.isUpcoming && (
+        <div
+          style={{
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            backgroundColor: "#ff9800",
+            color: "white",
+            padding: "5px 10px",
+            borderRadius: "20px",
+            fontSize: "0.75rem",
+            fontWeight: "600",
+            zIndex: 10,
+          }}
+        >
+          Upcoming
+        </div>
+      )}
       {/* Image */}
       <Card.Img
         variant="top"
@@ -40,57 +75,57 @@ function ProjectCards(props) {
         </Card.Text>
 
         {/* Tech Stack Section */}
-{props.techStack && (
-  <div style={{ marginBottom: "15px" }}>
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "8px",
-        justifyContent: "center",
-      }}
-    >
-      {techToShow.map((tech, index) => (
-        <motion.span
-          key={index}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.05 }}
-          style={{
-            backgroundColor: "#be50f4",
-            color: "white",
-            padding: "5px 10px",
-            borderRadius: "20px",
-            fontSize: "0.8rem",
-            fontWeight: "500",
-            whiteSpace: "nowrap",
-          }}
-        >
-          {tech}
-        </motion.span>
-      ))}
+        {props.techStack && (
+          <div style={{ marginBottom: "15px" }}>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+                justifyContent: "center",
+              }}
+            >
+              {techToShow.map((tech, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.05 }}
+                  style={{
+                    backgroundColor: "#be50f4",
+                    color: "white",
+                    padding: "5px 10px",
+                    borderRadius: "20px",
+                    fontSize: "0.8rem",
+                    fontWeight: "500",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {tech}
+                </motion.span>
+              ))}
 
-      {/* See more / See less as inline chip */}
-      {props.techStack.length > previewLimit && (
-        <motion.span
-          onClick={() => setShowAll(!showAll)}
-          style={{
-            backgroundColor: "transparent",
-            color: "#be50f4",
-            padding: "5px 10px",
-            borderRadius: "20px",
-            fontSize: "0.8rem",
-            fontWeight: "600",
-            cursor: "pointer",
-            border: "1px dashed #be50f4",
-          }}
-        >
-          {showAll ? "See less ↑" : "See more ↓"}
-        </motion.span>
-      )}
-    </div>
-  </div>
-)}
+              {/* See more / See less as inline chip */}
+              {props.techStack.length > previewLimit && (
+                <motion.span
+                  onClick={() => setShowAll(!showAll)}
+                  style={{
+                    backgroundColor: "transparent",
+                    color: "#be50f4",
+                    padding: "5px 10px",
+                    borderRadius: "20px",
+                    fontSize: "0.8rem",
+                    fontWeight: "600",
+                    cursor: "pointer",
+                    border: "1px dashed #be50f4",
+                  }}
+                >
+                  {showAll ? "See less ↑" : "See more ↓"}
+                </motion.span>
+              )}
+            </div>
+          </div>
+        )}
 
 
         {/* Spacer to push buttons bottom */}
@@ -112,6 +147,11 @@ function ProjectCards(props) {
           )}
         </div>
       </Card.Body>
+      {/* {latestCommit && (
+        <div style={{ textAlign: "center", marginTop: "10px", fontSize: "0.75rem", color: "#555" }}>
+          Last updated: {latestCommit}
+        </div>
+      )} */}
     </Card>
   );
 }

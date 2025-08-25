@@ -3,6 +3,7 @@ import realEstate from "../../Assets/Projects/Real-Estate.png";
 import animatedLoginPage from "../../Assets/Projects/animatedLoginPage.png";
 import foodOrdering from "../../Assets/Projects/food-ordering.png";
 import groceryStore from "../../Assets/Projects/groceryStore.png";
+import guideWave from "../../Assets/Projects/guideWave.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import swarAI from "../../Assets/Projects/swarAI.png";
 import Particle from "../Particle";
@@ -29,6 +30,18 @@ function Projects() {
               ghLink="https://github.com/vishShivansh/MusicGeneration"
               demoLink="https://music-generation-frontend-xi.vercel.app/"
               techStack={["AI", "Next.js", "Modal", "Polar", "Vercel Deployment", "NeonDB", "Prisma ORM", "Inngest", "T3 Stack", "AWS S3 Bucket", "Better Auth", "qwen 2-7B Model"]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+            isUpcoming={true}
+              imgPath={guideWave}
+              isBlog={false}
+              title="GuideWave"
+              description=""
+              ghLink=""
+              demoLink=""
+              techStack={["AI", "Next.js", "ReactJs", "Vercel Deployment", "Posthog", "Zustand", "Supabase", "TippyJs", "RRWEB", "Tailwind", "Typescript", "Radux UI"]}
             />
           </Col>
           <Col md={4} className="project-card">
